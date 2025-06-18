@@ -52,17 +52,17 @@
     /* Root Style */
     :root {
         /* Main heading color */
-        --heading-color: #112015;
+        --heading-color: #1a1d2b;
         /* Primary color for the site, often used for buttons, links, etc. */
-        --color-main: #5c9269;
+        --color-main: #31c1c8;
         /* Darker shade of the primary color, used for hover states or dark background elements */
-        --color-darker: #1D4026;
+        --color-darker: #202A44;
         /* Lighter shade of the primary color, for lighter elements or backgrounds */
-        --color-lighter: #99c7a3;
+        --color-lighter: #1d767a;
         /* Subtle background color, used for subtle backgrounds or areas with less emphasis */
-        --color-subtle: #FFFBE9;
+        --color-subtle:rgb(255, 255, 255);
         /* Border color, used for borders and dividers */
-        --color-border: #fdfdfd;
+        --color-border: #202A44;
         /* Error color, usually red, used for form validation or error messages */
         --color-error: #E22D2D;
         /* Warning color, yellow, used for warning messages or indicators */
@@ -70,11 +70,11 @@
         /* Information color, blue, used for info messages or alert indicators */
         --color-info: #2663cf;
         /* Success color, green, used for success messages or successful actions */
-        --color-success: #20bd3c;
+        --color-success: #31c1c8;
         /* Text color 1 for headers*/
-        --text-color-1: #696969;
+        --text-color-1:rgb(0, 0, 0);
         /* Text color 2 for body text */
-        --text-color-2: #c7c7c7;
+        --text-color-2: #31c1c8;
         /* Font family for main headers */
         --font-1: "Philosopher";
         /* Font family for body text or secondary headers */
@@ -249,7 +249,7 @@
     .testimonial-circle {
         width: 45px;
         height: 45px;
-        background-color: grey;
+        background-color: #1a1d2b;
         border-radius: 50%;
         margin-left: -7px;
     }
@@ -257,7 +257,7 @@
     .testimonial-circle-first {
         width: 45px;
         height: 45px;
-        background-color: grey;
+        background-color: #1a1d2b;
         border-radius: 50%;
     }
 
@@ -462,7 +462,7 @@
     background-size: cover;
 }
 .overlay-hero {
-    background-color: rgba(17, 32, 21, 0.6); 
+    background-color: #202A44;
     padding-bottom: 100px;
 }
 .border-hero {
@@ -496,10 +496,11 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about-overlay.jpg');
-    background-size: cover;
+    background-image: linear-gradient(rgba(62, 65, 68, 0.6), rgba(14, 14, 14, 0.6)), url('../img/about-overlay.jpg');
+    background-size: flex;
     background-position: center;
-    height: 512px;
+    height: 400px;
+   
 }
 .img-about {
     border-radius: 10px;
@@ -510,6 +511,10 @@
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+.logo-size {
+    width:"150";
+    height:"80";
 }
 .title-about{
     font-family: 'Philosopher';
@@ -522,7 +527,7 @@
 
 /* CEO Quote Style */
 .bg-ceo {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/ceo.jpg'); 
+    background-image: linear-gradient(rgba(32, 42, 68), rgba(1, 0, 12, 0.6)), url('../img/ceo.jpg'); 
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -554,7 +559,7 @@
 
 /* Choose Us Style */
 .bg-choose-us {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/choose.jpg');
+    background-image: linear-gradient(rgba(54, 54, 54, 0.6), rgba(189, 189, 189, 0.6)), url('../img/choose.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -1022,9 +1027,10 @@
     margin: 10px 0; 
 }
 .footer-logo {
-    width: 224px;
-    height: 56px;
+    width: 80px;
+    height: 140px;
     object-fit: cover;
+    
 }
 .subtext-footer {
     width: 60%;
