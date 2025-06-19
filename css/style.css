@@ -494,14 +494,32 @@
 }
 
 
-/* About Style */
+/* About Style 
 .about-bg {
     background-image: linear-gradient(rgba(62, 65, 68, 0.6), rgba(14, 14, 14, 0.6)), url('../img/about-overlay.jpg');
     background-size: flex;
     background-position: center;
     height: 400px;
    
+}*/
+
+.about-bg {
+    background-image: linear-gradient(rgba(62, 65, 68, 0.6), rgba(14, 14, 14, 0.6)), url(../img/about-overlay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    min-height: 300px; /* Ensures minimum height on small screens */
 }
+
+/* Optional: Make it more responsive */
+@media (max-width: 768px) {
+    .about-bg {
+        height: 250px;
+        background-attachment: scroll; /* Fixes iOS background-attachment issues */
+    }
+}
+
 .img-about {
     border-radius: 10px;
     width: 100%;
@@ -1287,12 +1305,12 @@
     .newsletter-container {
         width: 100%;
     }
-    .about-bg {
+    /*.about-bg {
         background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('img/about-overlay.jpg');
         background-size: cover;
         background-position: center;
         height: 400px;
-    }
+    }*/
     .contact-image {
         border-radius: 10px;
     }
