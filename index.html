@@ -3,323 +3,218 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Trisul Wellness</title>
+    <title>About Us - Trisul Wellness</title>
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
     <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/css/fontawesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="lib/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/border.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
   </head>
 
   <body>
-    <!-- BG Hero Start -->
-    <div class="bg-hero">
-      <div class="overlay-hero">
-        <!-- Navbar Start -->
+    <div class="about-bg">
+      <!-- Navbar Start -->
+      <div
+        class="container d-none d-lg-flex justify-content-between border-hero"
+      >
+        <div class="d-flex gap-2 py-2">
+          <a href="https://www.facebook.com/profile.php?id=61573523728600" class="icon-circle-32" data-share-to="facebook" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/trisulwellness?igsh=ZWRxaGUxaTFjN3Nh&utm_source=qr" class="icon-circle-32" data-share-to="instagram" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UC9hulpik25_cl_-BLjJXDnA" class="icon-circle-32" data-share-to="youtube" target="_blank" rel="noopener">
+  <i class="fa-brands fa-youtube"></i>
+</a>
+          <a href="#" class="icon-circle-32 share" data-share-to="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div id="alert-container"></div>
         <div
-          class="container d-none d-lg-flex justify-content-between border-hero"
+          class="d-flex gap-3 align-items-center justify-content-center lato c-white"
         >
-          <div class="d-flex gap-2 py-2">
-            <a href="#" class="icon-circle-32 share" data-share-to="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="icon-circle-32 share" data-share-to="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="icon-circle-32 share" data-share-to="youtube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#" class="icon-circle-32 share" data-share-to="linkedin">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <div>
+            <i class="fa-regular fa-envelope fs-16"></i
+            ><span class="ms-2 fs-13">trisulwellness@gmail.com</span>
           </div>
-          <div id="alert-container"></div>
-          <div
-            class="d-flex gap-3 align-items-center justify-content-center lato c-white"
+          <div>
+            <i class="fa-solid fa-phone me-2 fs-16"></i
+            ><span class="fs-13">+1 (754) 210-0826</span>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark lato">
+        <div class="container-lg d-flex">
+          <a class="navbar-brand ms-0 ms-sm-3 ms-lg-0" href="index.html">
+            <img
+              src="img/trisul logo.png"
+              alt="Brand Logo"
+              width="150"
+              height="80"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
           >
-            <div>
-              <i class="fa-regular fa-envelope fs-16"></i
-              ><span class="ms-2 fs-13">trisulwellness@gmail.com</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            data-bs-scroll="true"
+            aria-labelledby="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-            <div>
-              <i class="fa-solid fa-phone me-2 fs-16"></i
-              ><span class="fs-13">+1 (754) 210-0826</span>
+            <div class="offcanvas-body d-lg-flex justify-content-center">
+              <ul class="navbar-nav gap-3">
+                <!--
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+              -->
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link"
+                    id="servicesDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services-detail.html"
+                        >Service Detail</a
+                      >
+                    </li>
+                  -->
+                  </ul>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link"
+                    id="pagesDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="team.html">Team</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="packages.html">Packages</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="our-process.html"
+                        >Our Process</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="faqs.html">FAQS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="testimonials.html"
+                        >Testimonials</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-post.html"
+                        >Blog Post</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="single-post.html"
+                        >Single Post</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="404-page.html">404 Page</a>
+                    </li>
+                  </ul>
+                </li>
+              -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-none d-lg-flex">
+            <a href="contact.html" class="btn-light"> Make Appointment </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Banner Start -->
+       <!--
+      <div class="width-base">
+        <div
+          class="container w-100 h-100 d-flex justify-content-center align-items-center mt-4 fade-in"
+        >
+          <div>
+            <h1 class="philosopher banner-title c-white text-center">
+              About Us
+            </h1>
+            <div
+              class="d-flex gap-3 philosopher fs-14 c-silver align-items-center justify-content-center large-padding mt-4"
+            >
+              <div>HOME</div>
+              <i
+                class="fa-solid fa-arrow-right-long"
+                style="color: #c7c7c7"
+              ></i>
+              <div>ABOUT US</div>
             </div>
           </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark lato">w
-          <div class="container-lg d-flex">
-            <a class="navbar-brand ms-0 ms-sm-3 ms-lg-0" href="index.html">
-              <img
-                src="img/trisul logo.png"
-                alt="Brand Logo"yeah u can
-                width="150"
-                height="80"
-                class="d-inline-block align-text-top"
-              />
-            </a>
-
-            <button
-              class="navbar-toggler me-3"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              data-bs-scroll="true"
-              aria-labelledby="offcanvasNavbar"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body d-lg-flex justify-content-center">
-                <ul class="navbar-nav gap-3">
-                  <!--
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <button
-                      class="nav-link"
-                      id="serviceDropdown"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Services
-                      <i class="fa-solid fa-angle-down ms-1"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
-                      <li>
-                        <a class="dropdown-item" href="services.html"
-                          >Services</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="services-detail.html"
-                          >Service Detail</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <button
-                      class="nav-link"
-                      id="pagesDropdown"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                     Pages
-                      <i class="fa-solid fa-angle-down ms-1"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                      <li>
-                        <a class="dropdown-item" href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="packages.html"
-                          >Packages</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="our-process.html"
-                          >Our Process</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="faqs.html">FAQS</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="testimonials.html"
-                          >Testimonials</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="blog-post.html"
-                          >Blog Post</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="single-post.html"
-                          >Single Post</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="404-page.html"
-                          >404 Page</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="d-none d-lg-flex">
-              <a href="contact.html" class="btn-light"> Make Appointment </a>
-            </div>
-          </div>
-        </nav>
-      
-        <!-- Navbar End -->
-
-        <!-- Hero Section Start -->
-        <section class="section-m mx-auto container-lg">
-          <div class="c-white mb-4 mb-lg-0 fade-in">
-            <div>
-              <span class="icon-circle-17"
-                ><i class="fa-solid fa-plus"></i></span
-              ><span class="ms-2 philosopher fs-14"
-                >Trisul Wellness - AYURVEDIC HEALING</span
-              >
-            </div>
-            <h1 class="hero-title mt-3 mb-5">
-              Experience Holistic Healing and Serenity with Ayurveda at Trisul Wellness
-            </h1>
-            <div>
-              <p class="lato fs-16 c-silver hero-subtitle">
-                Experience the transformative power of Ayurveda at Trisul Wellness--your
-                sanctuary for holistic wellness, rejuvenation, and inner peace
-              </p>
-            </div>
-          </div>
-          <div class="d-block d-lg-flex gap-4 lato c-white fade-in">
-            <div>
-              <a href="contact.html" class="btn-light mb-3 mb-lg-0">
-                Contact Us
-              </a>
-            </div>
-            <!---->
-            <div class="d-flex gap-4 mt-4">
-              <div class="d-flex">
-                <div>
-                  <img
-                    src="img/testimonial-1.jpg"
-                    class="testimonial-circle-first"
-                    alt="testimonial"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/testimonial-2.jpg"
-                    class="testimonial-circle"
-                    alt="testimonial"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/testimonial-3.jpg"
-                    class="testimonial-circle"
-                    alt="testimonial"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/testimonial-4.jpg"
-                    class="testimonial-circle"
-                    alt="testimonial"
-                  />
-                </div>
-              </div>
-              <div>
-                <p class="hero-subtext">
-                  99% of customer enjoy total satisfaction
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="d-block d-lg-flex gap-5 content-m">
-            <div class="form-container fade-in">
-              <form
-                action="#"
-                class="d-block d-lg-flex gap-4 align-items-center justify-content-between"
-              >
-                <div class="mb-3">
-                  <label for="name" class="c-white philosopher fs-14"
-                    >YOUR NAME</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="c-white philosopher fs-14"
-                    >YOUR NUMBER</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Your Number"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="date" class="c-white philosopher fs-14"
-                    >Date</label
-                  >
-                  <input
-                    type="date"
-                    class="form-control date"
-                    id="date"
-                    required
-                  />
-                </div>
-                <div>
-                  <button class="btn-light mt-3">Book Now</button>
-                </div>
-              </form>
-            </div>
-            <div
-              class="d-flex align-items-end c-text lato gap-3 mt-3 mt-lg-0 fade-in"
-            >
-              <div>Relaxation</div>
-              <div>Meditation</div>
-              <div>Ayurvedic</div>
-            </div>
-          </div>
-        </section>
-        <!-- Hero Section End -->
       </div>
+    -->
+      <!-- Banner End -->
     </div>
-    <!-- BG Hero End -->
     <!-- About Start -->
-     <!--
     <div class="bg-subtle w-100">
       <div class="width-base">
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-2 g-5">
-            <div class="col px-0 order-1 order-lg-0 fade-in px-3 py-0">
+            <div class="col px-0 px-sm-2 order-1 order-lg-0 fade-in px-3 py-0">
               <div class="row row-cols-1 row-cols-sm-2 g-3">
                 <div class="col d-flex flex-column gap-3">
                   <div>
@@ -331,7 +226,7 @@
                   </div>
                   <div>
                     <img
-                      src="img/about-1.png"
+                      src="img/about-3.jpg"
                       alt="treatment"
                       class="img-about"
                     />
@@ -356,11 +251,12 @@
                   <span class="icon-circle-17-main"
                     ><i class="fa-solid fa-plus c-main"></i
                   ></span>
+                  <!--
                   <span class="ms-2 philosopher fs-14 c-main">ABOUT US</span>
                 </div>
                 <div class="title-about c-semi-black mt-4">
-                 Welcome to
-                 Trisul
+                -->
+                 Why Trisul?
                 </div>
               </div>
               <span class="text-grey">
@@ -388,50 +284,65 @@
 
 
                     </ul>
+                    
+                    
                   </p>
                 </div>
+              </div>
+              <div class="dblock d-lg-flex">
+                <div class="d-flex align-items-center my-3">
+                <!---   <span class="icon-circle-37-main me-3"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                </div>
+                <div>
+               <span class="text-subtitle c-semi-black my-4"
+                    >Mind. Body. Soul.</span
+                  >
+                  <br />
+                  <p class="text-grey my-3">
+                    The pillars of complete well-being in Ayurveda.
+                    The three Gunas: Sattva, Rajas, and Tamas.
+                  </p>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  -->
     <!-- About End -->
     <!-- CEO Quote Start -->
-     <!--
     <div class="bg-ceo">
       <div class="container-lg">
-        <div class="py-5 d-flex flex-column gap-4">
-          <div class="fade-in">
+        <div class="py-5 d-flex flex-column gap-4 fade-in">
+          <div>
             <div class="d-flex justify-content-center">
               <img src="icon/testimonial-icon.png" alt="testimonial quote" />
             </div>
-            <p class="fs-22 lato c-silver text-center ceo-quote mt-3 mb-4">
+            <p class="fs-22 lato c-silver text-center ceo-quote">
               At Trisul Wellness, we're dedicated to helping you achieve balance,
               healing, and peace through personalized Ayurvedic care for mind,
               body, and spirit
             </p>
           </div>
           <div>
-            <div class="d-flex justify-content-center fade-in">
+            <div class="d-flex justify-content-center">
               <img
                 src="img/signature.png"
                 class="signature"
                 alt="signature"
-                
               />
             </div>
-            <p class="fs-16 lato c-silver text-center mt-2 mt-md-4 fade-in">
+            <p class="fs-16 lato c-silver text-center mt-2 mt-md-4">
               Founder of Trisul Wellness
             </p>
           </div>
         </div>
       </div>
     </div>
-    -->
     <!-- CEO Quote End -->
-    <!-- Our Process Start -->
+    <!-- Core Value Start -->
     <div class="bg-subtle w-100 position-relative large-padding">
       <div class="width-base">
         <div class="fade-in">
@@ -499,9 +410,7 @@
         </div>
       </div>
     </div>
-    <!-- Our Process End -->
-    <!-- Why Choose Us Start -->
-    <div class="bg-darker position-relative">
+        <div class="bg-darker position-relative">
       <div
         class="bg-choose-us width-base position-relative position-lg-absolute choose-position"
       >
@@ -619,620 +528,183 @@
           </div>
         </div>
       </div>
-      <!--
-      <div class="width-base partner-margin fade-in">
-        <p class="text-silver text-center">
-          Trusted by Leading Brands – Delivering Wellness Excellence Through
-          Proven Partnerships
-        </p>
-        <div class="swiper-container mt-5">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/logo-1.png" alt="Logo 1" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-2.png" alt="Logo 2" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-3.png" alt="Logo 3" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-4.png" alt="Logo 4" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-5.png" alt="Logo 5" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-6.png" alt="Logo 6" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-7.png" alt="Logo 7" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-8.png" alt="Logo 8" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/logo-9.png" alt="Logo 9" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-    <!-- Why Choose Us End -->
-    <!-- Our Service Start -->
-    <!--- <div class="bg-subtle w-100">
+    <!-- Core Value End -->
+    <!-- Video Start -->
+     <!---
+    <div class="bg-darker">
       <div class="width-base">
-        <div class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5">
-          <div>
-            <div class="fade-in">
-              <span class="icon-circle-17-main"
-                ><i class="fa-solid fa-plus c-main"></i
-              ></span>
-              <span class="ms-2 philosopher fs-14 c-main">OUR SERVICES</span>
-            </div>
-            <div class="title-about c-semi-black fade-in">
-              Discover Holistic Treatments for Mind, Body, and Spirit
-            </div>
-          </div>
-          <div class="text-grey fade-in">
-            Discover the transformative power of Ayurveda at Trisul Wellness, where each
-            personalized treatment is designed to restore balance, promote
-            healing, and enhance your overall well-being for a vibrant, healthy
-            life
-          </div>
-        </div>
-        <div>
-          <div class="bg-service-1 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">General Wellness Package</p>
-                  <p class="text-grey">
-                    A full-body Ayurvedic oil massage designed to promote
-                    relaxation, and detoxification
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$100/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-service-2 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Marma Therapy</p>
-                  <p class="text-grey">
-                    A comprehensive detoxification program that includes
-                    therapeutic treatments and herbal
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$200/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-service-3 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Stress Management Package</p>
-                  <p class="text-grey">
-                    A calming treatment where warm herbal oil is poured gently
-                    onto the forehead
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$200/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-service-4 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Panchakarma Therapy</p>
-                  <p class="text-grey">
-                    A nourishing facial using natural herbs and oils tailored to
-                    your skin type, and skin health
-                  </p>
-                
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$200/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    Our Service End -->
-    <!-- Testimonial Start -->
-    <div class="bg-subtle w-100">
-      <div class="width-base pt-0">
-        <div class="container px-0 mx-0 mx-auto">
-          <div
-            class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5 fade-in"
+        <div class="video-wrapper fade-in">
+          <iframe
+            src="https://www.youtube.com/embed/VhBl3dHT5SY"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
           >
-            <div>
-              <div>
-                <span class="icon-circle-17-main"
-                  ><i class="fa-solid fa-plus c-main"></i
-                ></span>
-                <span class="ms-2 philosopher fs-14 c-main">TESTIMONIALS</span>
-              </div>
-              <div class="title-about c-semi-black">What Our Customer Say</div>
-            </div>
-            <div class="d-flex justify-content-end align-items-end">
-              <a href="testimonials.html" class="btn-dark mt-3">
-                More Testimonial
-              </a>
-            </div>
-          </div>
-          <div>
-            <div class="row row-cols-1 row-cols-sm-2 g-3">
-              <div class="col fade-in">
-                <div class="custom-card-1 position-static">
-                  <div class="card-body bg-semi-white">
-                    <div>
-                      <p class="text-grey">
-                        Trisul Wellness’s personalized care is unmatched. Each treatment
-                        is tailored to my wellness needs, leaving me relaxed and
-                        revitalized. The atmosphere is calming, and the staff is
-                        attentive, making every visit special
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-start pt-3"
-                    >
-                      <div class="d-flex gap-2">
-                        <div>
-                          <img
-                            src="img/testimonial-1.jpg"
-                            class="testimonial-circle"
-                            alt="testimonial"
-                          />
-                        </div>
-                        <div>
-                          <div class="fs-18 c-main lato">Bella Grace</div>
-                          <div class="fs-13 lato c-semi-transparent">
-                            Customer
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="icon/testi.svg"
-                          width="90"
-                          height="66"
-                          alt="testimonial quote"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col fade-in">
-                <div class="custom-card-1 position-static">
-                  <div class="card-body bg-semi-white">
-                    <div>
-                      <p class="text-grey">
-                        Trisul Wellness’s personalized care is unmatched. Each treatment
-                        is tailored to my wellness needs, leaving me relaxed and
-                        revitalized. The atmosphere is calming, and the staff is
-                        attentive, making every visit special
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-start pt-3"
-                    >
-                      <div class="d-flex gap-2">
-                        <div>
-                          <img
-                            src="img/testimonial-2.jpg"
-                            class="testimonial-circle"
-                            alt="testimonial"
-                          />
-                        </div>
-                        <div>
-                          <div class="fs-18 c-main lato">Nora Lynn</div>
-                          <div class="fs-13 lato c-semi-transparent">
-                            Customer
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="icon/testi.svg"
-                          width="90"
-                          height="66"
-                          alt="testimonial quote"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 g-3 mt-1">
-              <div class="col fade-in">
-                <div class="custom-card-1 position-static">
-                  <div class="card-body bg-semi-white">
-                    <div>
-                      <p class="text-grey">
-                        From the moment I stepped in, I felt peaceful. Trisul Wellness’s
-                        Ayurvedic therapies have helped me restore balance in my
-                        life, reducing stress and improving my overall health.
-                        Truly a life-changing experience
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-start pt-3"
-                    >
-                      <div class="d-flex gap-2">
-                        <div>
-                          <img
-                            src="img/testimonial-3.jpg"
-                            class="testimonial-circle"
-                            alt="testimonial"
-                          />
-                        </div>
-                        <div>
-                          <div class="fs-18 c-main lato">Emma Sage</div>
-                          <div class="fs-13 lato c-semi-transparent">
-                            Customer
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="icon/testi.svg"
-                          width="90"
-                          height="66"
-                          alt="testimonial quote"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col fade-in">
-                <div class="custom-card-1 position-static">
-                  <div class="card-body bg-semi-white">
-                    <div>
-                      <p class="text-grey">
-                        Trisul Wellness’s Panchakarma detox was exactly what I needed.
-                        After the treatment, I felt lighter, more energized, and
-                        mentally clear. It’s a transformative experience that I
-                        would gladly recommend to everyone
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-start pt-3"
-                    >
-                      <div class="d-flex gap-2">
-                        <div>
-                          <img
-                            src="img/testimonial-4.jpg"
-                            class="testimonial-circle"
-                            alt="testimonial"
-                          />
-                        </div>
-                        <div>
-                          <div class="fs-18 c-main lato">Mila Rose</div>
-                          <div class="fs-13 lato c-semi-transparent">
-                            Customer
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="icon/testi.svg"
-                          width="90"
-                          height="66"
-                          alt="testimonial quote"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div>
+          </iframe>
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
-    <!-- Wellness Showcase Start -->
-     <!--
-    <div class="bg-subtle w-100">
-      <div class="width-base pt-3">
-        <div class="fade-in">
-          <div class="d-flex flex-column align-items-center">
-            <div>
-              <span class="icon-circle-17-main"
-                ><i class="fa-solid fa-plus c-main"></i
-              ></span>
-              <span class="ms-2 philosopher fs-14 c-main"
-                >WELLNESS SHOWCASE</span
-              >
-            </div>
-            <div class="title-about c-semi-black">Our Spa Experience</div>
-            <div class="subtext-showcase">
-              Discover the essence of Trisul Wellness Spa, where every image tells a
-              story of healing and rejuvenation
-            </div>
+  -->
+    <!-- Video End -->
+    <!-- Team Start -->
+     <!---
+    <div class="bg-subtle">
+      <div class="width-base fade-in">
+        <div class="d-flex flex-column align-items-center">
+          <div>
+            <span class="icon-circle-17-main"
+              ><i class="fa-solid fa-plus c-main"></i
+            ></span>
+            <span class="ms-2 philosopher fs-14 c-main">OUR TEAM</span>
           </div>
+          <div class="title-about c-semi-black">Our Wellness Specialists</div>
         </div>
         <div class="container mt-5 px-0">
-          <div class="row row-cols-1 row-cols-sm-3 g-3 fade-in">
-            <div class="col d-flex flex-column gap-3 px-3">
-              <div>
-                <img
-                  src="img/showcase-1.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-              <div>
-                <img
-                  src="img/showcase-2.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="team-member">
+                <div class="overlay"></div>
+                <img src="img/team-1.jpg" alt="team" class="img-team" />
+                <div class="team-name">
+                  <div>
+                    <h5 class="c-white text-center">Luna Sky</h5>
+                  </div>
+                  <div class="fs-12 c-silver text-center lato fw-light">
+                    Therapist
+                  </div>
+                  <div class="d-flex gap-2 py-5">
+                    <a
+                      href="https://www.facebook.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col d-flex flex-column gap-3 px-3">
-              <div>
-                <img
-                  src="img/showcase-3.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-              <div>
-                <img
-                  src="img/showcase-4.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
+            <div class="col">
+              <div class="team-member">
+                <div class="overlay"></div>
+                <img src="img/team-2.jpg" alt="team" class="img-team" />
+                <div class="team-name">
+                  <div>
+                    <h5 class="c-white text-center">Sophia Reed</h5>
+                  </div>
+                  <div class="fs-12 c-silver text-center lato fw-light">
+                    Lead Therapist
+                  </div>
+                  <div class="d-flex gap-2 py-5">
+                    <a
+                      href="https://www.facebook.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col px-3">
-              <div>
-                <img
-                  src="img/showcase-5.jpg"
-                  alt="showcase"
-                  class="last-img-showcase"
-                />
+            <div class="col">
+              <div class="team-member">
+                <div class="overlay"></div>
+                <img src="img/team-3.jpg" alt="team" class="img-team" />
+                <div class="team-name">
+                  <div>
+                    <h5 class="c-white text-center">Ella Harper</h5>
+                  </div>
+                  <div class="fs-12 c-silver text-center lato fw-light">
+                    Herbal Consultant
+                  </div>
+                  <div class="d-flex gap-2 py-5">
+                    <a
+                      href="https://www.facebook.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com"
+                      class="icon-circle-32"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-    <!-- Wellness Showcase End -->
-    <!-- FAQS Start -->
-     <!--
-    <div class="bg-semi-white w-100">
-      <div class="width-base">
-        <div class="container px-0">
-          <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col fade-in pe-5">
-              <img src="img/faqs.jpg" alt="faqs" class="img-faqs" />
-            </div>
-            <div class="col fade-in ps-4">
-              <div>
-                <div>
-                  <span class="icon-circle-17-main"
-                    ><i class="fa-solid fa-plus c-main"></i
-                  ></span>
-                  <span class="ms-2 philosopher fs-14 c-main">FAQS</span>
-                </div>
-                <div class="title-about c-semi-black">
-                  Frequently Asked Questions
-                </div>
-              </div>
-              <div class="accordion mt-5" id="Trisul WellnessAccordion">
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      What is Trisul Wellness’s approach to wellness?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      Trisul Wellness embraces the ancient principles of Ayurveda,
-                      offering personalized treatments that balance the mind,
-                      body, and spirit through natural remedies and holistic
-                      practices.
-                    </div>
+            <div class="col">
+              <div class="team-member">
+                <div class="overlay"></div>
+                <img src="img/team-4.jpg" alt="team" class="img-team" />
+                <div class="team-name">
+                  <div>
+                    <h5 class="c-white text-center">Zara Yema</h5>
                   </div>
-                </div>
-
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      What services does Trisul Wellness offer?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      Trisul Wellness offers a range of services including Abhyanga
-                      massage, Shirodhara therapy, Panchakarma detox programs,
-                      Ayurvedic facials, and wellness consultations, all
-                      designed to promote overall health.
-                    </div>
+                  <div class="fs-12 c-silver text-center lato fw-light">
+                    Yoga Instructor
                   </div>
-                </div>
-
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
+                  <div class="d-flex gap-2 py-5">
+                    <a
+                      href="https://www.facebook.com"
+                      class="icon-circle-32"
+                      target="_blank"
                     >
-                      Is a consultation required before my first treatment?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      Yes, we recommend a consultation prior to your first
-                      visit. This allows our practitioners to assess your unique
-                      dosha and wellness goals, ensuring a personalized
-                      treatment plan.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingFour">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com"
+                      class="icon-circle-32"
+                      target="_blank"
                     >
-                      How can I book a treatment at Trisul Wellness?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      You can book your treatment by visiting our website and
-                      clicking the “Book Now” button, or by calling our
-                      reception team directly for assistance.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com"
+                      class="icon-circle-32"
+                      target="_blank"
                     >
-                      How can I book a treatment at Trisul Wellness?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseFive"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      You can book your treatment by visiting our website and
-                      clicking the “Book Now” button, or by calling our
-                      reception team directly for assistance.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <span class="accordion-header" id="headingSix">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      How can I book a treatment at Trisul Wellness?
-                    </button>
-                  </span>
-                  <div
-                    id="collapseSix"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingSix"
-                    data-bs-parent="#Trisul WellnessAccordion"
-                  >
-                    <div class="accordion-body">
-                      You can book your treatment by visiting our website and
-                      clicking the “Book Now” button, or by calling our
-                      reception team directly for assistance.
-                    </div>
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1242,122 +714,8 @@
       </div>
     </div>
   -->
-    <!-- FAQS End -->
-    <!-- Blog Post Start -->
-    <!--
-    <div class="bg-subtle w-100">
-      <div class="width-base">
-        <div class="container px-0 mx-0 mx-auto">
-          <div
-            class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5 fade-in"
-          >
-            <div>
-              <div>
-                <span class="icon-circle-17-main"
-                  ><i class="fa-solid fa-plus c-main"></i
-                ></span>
-                <span class="ms-2 philosopher fs-14 c-main">BLOG POST</span>
-              </div>
-              <div class="title-about c-semi-black">
-                Latest Articles From Trisul Wellness
-              </div>
-            </div>
-            <div class="d-flex justify-content-end align-items-end">
-              <a href="blog-post.html" class="btn-dark mt-3"> More Articles </a>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-lg-3 g-3">
-            <div class="col fade-in">
-              <div class="custom-card-2">
-                <div class="card-body p-0 bg-semi-white">
-                  <div class="overflow-hidden">
-                    <img
-                      src="img/blog-post-1.jpg"
-                      alt="blog post"
-                      class="img-blog-post"
-                    />
-                  </div>
-                  <div class="px-3 py-3">
-                    <div>
-                      <p class="text-subtitle c-semi-black">
-                        Inner Harmony Awaits
-                      </p>
-                      <p class="text-grey">
-                        Inner Harmony Awaits October 16, 2024 | 0 comment Donec…
-                      </p>
-                    </div>
-                    <a
-                      href="single-post.html"
-                      class="lato c-main fs-15 learn-link"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col fade-in">
-              <div class="custom-card-2">
-                <div class="card-body p-0 bg-semi-white">
-                  <div class="overflow-hidden">
-                    <img
-                      src="img/blog-post-2.jpg"
-                      alt="blog post"
-                      class="img-blog-post"
-                    />
-                  </div>
-                  <div class="px-3 py-3">
-                    <div>
-                      <p class="text-subtitle c-semi-black">
-                        Relax and Rejuvenate
-                      </p>
-                      <p class="text-grey">
-                        Relax and Rejuvenate October 16, 2024 | 0 comment Donec…
-                      </p>
-                    </div>
-                    <a
-                      href="single-post.html"
-                      class="lato c-main fs-15 learn-link"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col fade-in">
-              <div class="custom-card-2">
-                <div class="card-body p-0 bg-semi-white">
-                  <div class="overflow-hidden">
-                    <img
-                      src="img/blog-post-3.jpg"
-                      alt="blog post"
-                      class="img-blog-post"
-                    />
-                  </div>
-                  <div class="px-3 py-3">
-                    <div>
-                      <p class="text-subtitle c-semi-black">
-                        Customized Ayurvedic Therapies
-                      </p>
-                      <p class="text-grey">
-                        Customized Ayurvedic Therapies October 16, 2024 | 0
-                        comment Donec…
-                      </p>
-                    </div>
-                    <a
-                      href="single-post.html"
-                      class="lato c-main fs-15 learn-link"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-    <!-- Blog Post End -->
+    <!-- Team End -->
+  
     <!-- Footer Start -->
     <div class="bg-darker w-100">
       <div class="width-base">
@@ -1370,7 +728,6 @@
                     src="img/trisul logo.png"
                     alt="Trisul Wellness logo"
                     class="footer-logo"
-                    style="width: 80px; height: 140px;"
                   />
                 </a>
               </div>
@@ -1485,6 +842,7 @@
                 </div>
               </div>
             </div>
+            <!--
             <div class="col-12 col-lg-1"></div>
             <div class="col-12 col-lg-2">
               <h3 class="text-subtitle c-white mb-0 mb-lg-4 mt-5 mt-lg-0">
@@ -1550,6 +908,7 @@
                     >Cookies</a
                   >
                 </li>
+              -->
               </ul>
             </div>
           </div>
