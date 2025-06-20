@@ -505,7 +505,7 @@
 
 .about-bg {
     background-image: linear-gradient(rgba(62, 65, 68, 0.6), rgba(14, 14, 14, 0.6)), url(../img/about-overlay.jpg);
-    background-size: cover;
+    background-size: fill;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
